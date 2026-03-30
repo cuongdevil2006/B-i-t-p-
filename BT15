@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Bai15 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap ngay thang nam (dd/mm/yyyy): ");
+        String s = sc.nextLine();
+        String[] p = s.split("/");
+        if (p.length == 3) {
+            System.out.println("Ngay: " + p[0]);
+            System.out.println("Thang: " + p[1]);
+            System.out.println("Nam: " + p[2]);
+        } 
+        else {
+            System.out.println("Dinh dang khong hop le (dung dd/mm/yyyy)!");
+        }
+    }
+}
