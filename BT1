@@ -1,0 +1,7 @@
+public class Bai1 {
+    public static void main(String[] args) {
+        System.out.println("Tên:Hà Quốc Cường");
+        System.out.println("Ngày sinh:14/02/2006");
+        System.out.println("MSSV:1350080026");
+    }
+}
