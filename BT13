@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class Bai13 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap chuoi: ");
+        String s = sc.nextLine().trim();
+        if (s.isEmpty()) System.out.println("So tu: 0");
+        else System.out.println("So tu: " + s.split("\\s+").length);
+    }
+}
