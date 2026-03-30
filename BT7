@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Bai7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String[] ds = {"Ly", "Hoa", "Sinh", "Toan", "May tinh"};
+        double tong = 0;
+        for (String m : ds) {
+            System.out.print("Nhap diem mon " + m + ": ");
+            tong += sc.nextDouble();
+        }
+        double tyLe = (tong / 500) * 100;
+        System.out.println("Ty le: " + tyLe + "%");
+        if (tyLe > 90) System.out.println("Hang A");
+        else if (tyLe > 80) System.out.println("Hang B");
+        else if (tyLe > 70) System.out.println("Hang C");
+        else if (tyLe > 60) System.out.println("Hang D");
+        else if (tyLe > 40) System.out.println("Hang E");
+        else System.out.println("Hang F");
+    }
+}
