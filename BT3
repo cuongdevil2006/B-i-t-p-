@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class Bai3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap do F: ");
+        double f = sc.nextDouble();
+        double c = (f - 32) / 1.8;
+        system.out.println("Do C tuong ung la: %.2f\n", c);
+    }
+}
