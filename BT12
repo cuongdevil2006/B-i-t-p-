@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Bai12 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap vao mot so: ");
+        int n = sc.nextInt();
+        int daoNguoc = 0;
+        int temp = n;
+        while (temp > 0) {
+            daoNguoc = daoNguoc * 10 + (temp % 10);
+            temp /= 10;
+        }
+        if (n >= 0 && n == daoNguoc) {
+            System.out.println(n + " la so doi xung");
+        } else {
+            System.out.println(n + " khong phai so doi xung");
+        }
+    }
+}
