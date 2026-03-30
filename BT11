@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Bai11 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap vao mot so: ");
+        int n = sc.nextInt();        
+        int daoNguoc = 0;
+        int temp = n;
+        while (temp != 0) {
+            int chuSo = temp % 10;
+            daoNguoc = daoNguoc * 10 + chuSo;
+            temp /= 10;
+        }        
+        System.out.println("So sau khi dao nguoc: " + daoNguoc);
+    }
+}
