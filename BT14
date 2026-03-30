@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Bai14 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap Ho va Ten: ");
+        String s = sc.nextLine().trim();
+        String[] p = s.split("\\s+");
+        if (p.length >= 3) {
+            System.out.println("Ho: " + p[0]);
+            System.out.print("Ten dem: ");
+            for (int i=1; i<p.length-1; i++) System.out.print(p[i] + " ");
+            System.out.println("\nTen: " + p[p.length-1]);
+        }
+        else {
+            System.out.println("Vui long nhap day du Ho, Ten dem va Ten!");
+        }
+    }
+}
