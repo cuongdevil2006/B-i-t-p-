@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Bai2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Chieu Dai: ");
+        double cao = sc.nextDouble();
+        System.out.print("Chieu Rong: ");
+        double rong = sc.nextDouble();
+        
+        System.out.println("Dien tich hinh chu nhat la: " + (cao * rong));
+    }
+}
