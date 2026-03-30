@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Bai6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap canh a: "); double a = sc.nextDouble();
+        System.out.print("Nhap canh b: "); double b = sc.nextDouble();
+        System.out.print("Nhap canh c: "); double c = sc.nextDouble();
+        
+        if (a+b > c && a+c > b && b+c > a) System.out.println("Tam giac hop le");
+        else System.out.println("Tam giac khong hop le");
+    }
+}
