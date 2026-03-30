@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Bai8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap vao mot so: ");
+        int n = Math.abs(sc.nextInt());        
+        int cuoi = n % 10;
+        int dau = n;
+        while (dau >= 10) {
+            dau /= 10;
+        }        
+        System.out.println("Chu so dau tien: " + dau);
+        System.out.println("Chu so tan cung: " + cuoi);
+    }
+}
